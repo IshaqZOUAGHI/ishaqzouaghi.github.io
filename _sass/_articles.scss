@@ -1,0 +1,172 @@
+.article.card {
+    text-decoration: none!important;
+    padding: 15px;
+    height: 100%;
+    
+    .card-title {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .card-footer {
+        font-size: 14px;
+        margin: 0 -15px -15px -15px;
+        padding: 15px 35px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+}
+
+.article {
+
+    p {
+        text-align: justify;
+    }
+
+    .tag:hover {
+        background-color: $primary;
+        color: white !important;
+    }
+
+    .deprecated {
+        color:red;
+        font-size: 16px;
+        margin-top: -6px;
+    }    
+
+    .article-metadata {
+        font-size: 14px;
+        margin-top: -6px;
+    }
+
+    .article-footer-metadata {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    footer {
+        font-size: 10px;
+        color: #6c757d;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        text-align: right;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        margin-right: 2em;
+    }
+
+    .comment {
+        margin-top: 5px;
+    }
+    
+    .comment-title {
+        font-size: 27px;
+    }
+    
+    h1, h2 { margin-top: 32px; }
+
+    h1 {
+        counter-reset: section;
+    }
+
+    h2:before {
+        content: counter(section) ". ";
+        counter-increment: section; /* add 1 to chapter */
+    }
+
+    h2 {
+        border-bottom:1px solid #CCC;
+        padding-bottom:3px;
+        counter-reset: subsection;
+    }
+
+    h3:before {
+        content: counter(section) "." counter(subsection) ". ";
+        counter-increment: subsection;
+    }
+
+    h3 {
+        counter-reset: subsubsection;
+    }
+
+    h4:before {
+        content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+        counter-increment: subsubsection;
+    }
+
+    h4 {
+        counter-reset: subsubsubsection;
+    }
+
+    h5:before {
+        content: counter(section) "." counter(subsection) "." counter(subsubsection) "." counter(subsubsubsection) ". ";
+        counter-increment: subsubsubsection;
+    }
+    
+    hr { background: $secondary; }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;    
+        margin: 1rem auto;
+    }
+
+    .video {
+        position: relative;
+        padding-bottom: 56.25%;
+        margin-bottom: 1rem;
+        width: 100%;
+        iframe {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    a:not(.btn):not([class^="carousel-"]):not([class^="list-"]):not(.no-underline)  {
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover { color: $primary; }
+
+        &::after {
+            content: '';
+            display: block;
+            height: .15em;
+            margin-top: -.15em;
+            width: 0;
+            background: $primary;
+            transition: width .35s;
+        }
+
+        &:hover::after { width: 100%; }
+    }
+      
+    table {
+        display: block;
+        overflow-x: auto;
+        margin: 1rem 0;
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+        }
+
+        th {
+            @extend td;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-weight: 500;
+            text-align: left;
+            background-color: $primary;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: $light;
+        }
+    }
+}

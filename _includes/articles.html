@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-9">
+    <div class="card-columns mt-2 mt-5">
+
+      {% assign pages = include.id | sort: 'weight' %}
+
+      {% for resource in pages %}
+      {% include article.html resource=resource %}
+      {% endfor %}
+
+    </div>
+
+  </div>
+  <div class="col-md-3 mt-5">
+    {% include rightside.html %}
+  </div>
+</div>

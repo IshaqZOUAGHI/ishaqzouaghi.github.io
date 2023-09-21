@@ -1,13 +1,10 @@
-# Blog de Mickaël BARON
+# Blog de Ishaq ZOUAGHI
 
 Vous trouverez sur ce blog :
 
 * des *billets* : un format court utilisés pour poser sur écrit mes découvertes sur les différentes technologies du moment ;
-* des supports de *cours* sous la forme de transparents hébergés sur [SpeakerDeck] et [Slideshare] ;
 * des *articles* : réflexion plus longue sur un sujet particulier ;
 * des *ateliers* : ensemble d'exercices hébergés sur [Github].
-
-Toutes ces ressources de mon blog relatent de mon activité de veille technologique concernant essentiellement les technologies Java que j'ai rédigés pendant les différentes années professionnelles et que je continue d'étoffer depuis que je suis Ingénieur de Recherche en Informatique au sein du laboratoire d'informatique du [LIAS].
 
 Vous ne trouverez pas sur ce blog (et mes médias sociaux) :
 
@@ -37,7 +34,5 @@ Le système de commentaire basé sur Twitter a été inspiré par ce [billet](ht
 
 Le générateur de tables des matières utilise le projet [jekyll-toc](https://github.com/allejo/jekyll-toc).
 
-[SpeakerDeck]: https://speakerdeck.com/mickaelbaron
 [portfolYOU]: https://github.com/YoussefRaafatNasry/portfolYOU
-[Slideshare]: https://fr.slideshare.net/baronm
-[Github]: https://github.com/mickaelbaron
+[Github]: https://github.com/IshaqZOUAGHI
